@@ -46,7 +46,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_rosidl",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:rosidl.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/rosidl.git",
+        remote = "https://github.com/oasis-robotics/rosidl.git",
         commit = "611c16181cfa832d2433e77c612bd75e303cca4e",
     )
 
@@ -71,7 +71,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_rcpputils",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:rcpputils.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/rcpputils.git",
+        remote = "https://github.com/oasis-robotics/rcpputils.git",
         commit = "190fe233f9a46de715232fb07d195e5b43b21afe",
     )
 
@@ -87,7 +87,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_rmw_implementation",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:rmw_implementation.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/rmw_implementation.git",
+        remote = "https://github.com/oasis-robotics/rmw_implementation.git",
         commit = "026462a1aac90352c67ba38b62652129144c821b",
     )
 
@@ -175,7 +175,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_rosidl_typesupport",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:rosidl_typesupport.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/rosidl_typesupport.git",
+        remote = "https://github.com/oasis-robotics/rosidl_typesupport.git",
         commit = "6a5e55ff8e1fbdd72a55060ec1ccedbef8f78f96",
     )
 
@@ -247,7 +247,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_rosidl_python",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:rosidl_python.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/rosidl_python.git",
+        remote = "https://github.com/oasis-robotics/rosidl_python.git",
         commit = "a772648eb135e08bfd2f48da15a86a7fea581622",
     )
 
@@ -272,7 +272,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_rclpy",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:rclpy.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/rclpy.git",
+        remote = "https://github.com/oasis-robotics/rclpy.git",
         commit = "677e67f4a50469591e436f9919ceae0bd870f9eb",
     )
 
@@ -307,7 +307,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2_launch",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:launch.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/launch.git",
+        remote = "https://github.com/oasis-robotics/launch.git",
         commit = "e0268d0d6b60be01cfa639d2c0f77306eba51539",
     )
 
@@ -332,7 +332,7 @@ def ros2_repositories():
         new_git_repository,
         name = "ros2cli",
         build_file = "@com_github_oasis_robotics_rules_ros2//repositories:ros2cli.BUILD.bazel",
-        remote = "https://github.com/oasis_robotics/ros2cli.git",
+        remote = "https://github.com/oasis-robotics/ros2cli.git",
         commit = "087658b4ab3adedb1e8355af8f4d2c2e52d13c9b",
     )
 

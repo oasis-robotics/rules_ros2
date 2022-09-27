@@ -155,7 +155,7 @@ def _run_generator(
         idl_tuples = idl_tuples,
         output_dir = output_dir,
         template_dir = generator_templates[0].dirname,
-        target_dependencies = [],  # TODO(oasis_robotics) Do we need this?
+        target_dependencies = [],  # TODO(oasis-robotics) Do we need this?
     )
     ctx.actions.write(generator_arguments_file, generator_arguments.to_json())
 
@@ -354,7 +354,7 @@ def _c_generator_aspect_impl(target, ctx):
         _TYPESUPPORT_GENERATOR_C_OUTPUT_MAPPING,
         visibility_control_template = ctx.file._typesupport_visibility_control_template,
         extra_generator_args = [
-            # TODO(oasis_robotics) There are also rosidl_typesupport_connext_c and
+            # TODO(oasis-robotics) There are also rosidl_typesupport_connext_c and
             # rosidl_typesupport_fastrtps_c.
             "--typesupports=rosidl_typesupport_introspection_c",
         ],
@@ -536,7 +536,7 @@ def _cpp_generator_aspect_impl(target, ctx):
         ctx.attr._typesupport_templates,
         _TYPESUPPORT_GENERATOR_CPP_OUTPUT_MAPPING,
         extra_generator_args = [
-            # TODO(oasis_robotics) There are also rosidl_typesupport_connext_cpp and
+            # TODO(oasis-robotics) There are also rosidl_typesupport_connext_cpp and
             # rosidl_typesupport_fastrtps_cpp.
             "--typesupports=rosidl_typesupport_introspection_cpp",
         ],
@@ -738,7 +738,7 @@ def _py_generator_aspect_impl(target, ctx):
         linking_contexts = [cc_info.linking_context] + linking_contexts,
         name = dynamic_library_name_stem,
         output_type = "dynamic_library",
-        # TODO(oasis_robotics) More deps means larger libs. Try to set this to False.
+        # TODO(oasis-robotics) More deps means larger libs. Try to set this to False.
         # link_deps_statically = True,  # Default is True!
     )
     library_to_link = linking_outputs.library_to_link
