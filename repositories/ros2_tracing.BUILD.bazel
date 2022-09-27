@@ -2,7 +2,7 @@
 """
 
 load(
-    "@com_github_oasis_robitics_rules_ros2//third_party:expand_template.bzl",
+    "@com_github_oasis_robotics_rules_ros2//third_party:expand_template.bzl",
     "expand_template",
 )
 load("@rules_cc//cc:defs.bzl", "cc_library")

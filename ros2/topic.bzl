@@ -14,8 +14,8 @@ def ros2_topic(name, deps, **kwargs):
     """
     py_binary(
         name = name,
-        srcs = ["@com_github_oasis_robitics_rules_ros2//ros2:ros2_topic.py"],
-        main = "@com_github_oasis_robitics_rules_ros2//ros2:ros2_topic.py",
+        srcs = ["@com_github_oasis_robotics_rules_ros2//ros2:ros2_topic.py"],
+        main = "@com_github_oasis_robotics_rules_ros2//ros2:ros2_topic.py",
         deps = [
             "@ros2cli//:ros2topic",
             "@ros2cli",

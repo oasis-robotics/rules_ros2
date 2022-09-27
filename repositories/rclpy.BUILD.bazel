@@ -125,7 +125,7 @@ py_library(
     imports = ["rclpy"],
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_oasis_robitics_rules_ros2//ros2/fake_ament:ament_index_python",
+        "@com_github_oasis_robotics_rules_ros2//ros2/fake_ament:ament_index_python",
         "@ros2_rcl_interfaces//:py_action_msgs",
         "@ros2_rcl_interfaces//:py_builtin_interfaces",
         "@ros2_rcl_interfaces//:py_rcl_interfaces",

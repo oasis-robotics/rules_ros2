@@ -1,7 +1,7 @@
 """ Defines launch_ros-like ROS2 deployment.
 """
 
-load("@com_github_oasis_robitics_rules_ros2//third_party:expand_template.bzl", "expand_template")
+load("@com_github_oasis_robotics_rules_ros2//third_party:expand_template.bzl", "expand_template")
 load("@rules_python//python:defs.bzl", "py_binary")
 
 def ros2_launch(name, nodes, launch_file, deps = None, data = None, **kwargs):
@@ -25,7 +25,7 @@ def ros2_launch(name, nodes, launch_file, deps = None, data = None, **kwargs):
     launch_script = "{}_launch.py".format(name)
     expand_template(
         name = "{}_launch_gen".format(name),
-        template = "@com_github_oasis_robitics_rules_ros2//ros2:launch.py.tpl",
+        template = "@com_github_oasis_robotics_rules_ros2//ros2:launch.py.tpl",
         substitutions = substitutions,
         out = launch_script,
         data = [launch_file],

@@ -11,7 +11,7 @@ py_library(
     imports = ["launch"],
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_oasis_robitics_rules_ros2//ros2/fake_ament:ament_index_python",
+        "@com_github_oasis_robotics_rules_ros2//ros2/fake_ament:ament_index_python",
         "@osrf_pycommon",
         requirement("lark_parser"),
     ],
@@ -24,7 +24,7 @@ py_library(
     visibility = ["//visibility:public"],
     deps = [
         ":launch",
-        "@com_github_oasis_robitics_rules_ros2//ros2/fake_ament:ament_index_python",
+        "@com_github_oasis_robotics_rules_ros2//ros2/fake_ament:ament_index_python",
         "@osrf_pycommon",
     ],
 )

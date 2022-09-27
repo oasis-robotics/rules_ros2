@@ -40,5 +40,5 @@ The next step is to work out the ROS2 testing functionality with Bazel as well
 as well as defining a rostopic-like app.
 
 The grand idea would be to get this repo at least to the level of
-[rules_ros](https://github.com/oasis_robitics/rules_ros). In particular:
+[rules_ros](https://github.com/oasis_robotics/rules_ros). In particular:
 - It has to be convenient to cross-compile a ROS2 deployment.

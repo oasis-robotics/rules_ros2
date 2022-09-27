@@ -10,7 +10,7 @@ py_library(
     imports = ["."],
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_oasis_robitics_rules_ros2//ros2/fake_ament:ament_index_python",
+        "@com_github_oasis_robotics_rules_ros2//ros2/fake_ament:ament_index_python",
         "@ros2_rosidl//:rosidl_parser",
         requirement("numpy"),
         requirement("pyyaml"),

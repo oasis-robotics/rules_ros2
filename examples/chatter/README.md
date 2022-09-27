@@ -30,9 +30,9 @@ To run the sample deployment in a Docker container, run
 bazel run //examples/chatter:chatter_image
 ```
 
-The base docker image is defined in [this](https://github.com/oasis_robitics/rules_ros/blob/main/docker/base/base.Dockerfile) Dockerfile.
+The base docker image is defined in [this](https://github.com/oasis_robotics/rules_ros/blob/main/docker/base/base.Dockerfile) Dockerfile.
 The compressed size of this deployment
-container (compiled with `--config=opt`) is less than 50 MB (see [here](https://hub.docker.com/layers/oasis_robitics/chatter/demo_ros2/images/sha256-c87e229e75ea5a8e2983f8e63b2357ec856edc2918bd9619a065e1b8449cf23f?context=repo)).
+container (compiled with `--config=opt`) is less than 50 MB (see [here](https://hub.docker.com/layers/oasis_robotics/chatter/demo_ros2/images/sha256-c87e229e75ea5a8e2983f8e63b2357ec856edc2918bd9619a065e1b8449cf23f?context=repo)).
 
 Alternatively, you can run nodes without the launch mechanism. In a terminal run
 
