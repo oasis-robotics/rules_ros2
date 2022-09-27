@@ -1,4 +1,4 @@
-workspace(name = "com_github_mvukov_rules_ros2")
+workspace(name = "com_github_oasis_robitics_rules_ros2")
 
 load("//repositories:repositories.bzl", "ros2_repositories")
 

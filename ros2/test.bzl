@@ -1,7 +1,7 @@
 """ Defines ROS2 testing functionality.
 """
 
-load("@com_github_mvukov_rules_ros2//third_party:expand_template.bzl", "expand_template")
+load("@com_github_oasis_robitics_rules_ros2//third_party:expand_template.bzl", "expand_template")
 load("@rules_python//python:defs.bzl", "py_test")
 
 def ros2_test(name, nodes, launch_file, deps = None, data = None, **kwargs):
@@ -25,7 +25,7 @@ def ros2_test(name, nodes, launch_file, deps = None, data = None, **kwargs):
     launch_script = "{}_launch.py".format(name)
     expand_template(
         name = "{}_launch_gen".format(name),
-        template = "@com_github_mvukov_rules_ros2//ros2:test.py.tpl",
+        template = "@com_github_oasis_robitics_rules_ros2//ros2:test.py.tpl",
         substitutions = substitutions,
         out = launch_script,
         data = [launch_file],
